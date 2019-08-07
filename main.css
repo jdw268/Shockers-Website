@@ -1,0 +1,86 @@
+body{
+    background-color: #f4f5f5;
+    text-align: center;
+    padding: 20px;
+}
+
+#image{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 5px 6px #ccc;  
+}
+
+#img-div{
+    background: white;
+    padding-top: 20px;        
+}
+
+#img-caption{  
+  padding-bottom: 20px;
+  font-style: italic;
+}
+
+#list-div{    
+    display: inline-block;
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+    list-style: inside;
+    list-style-type: square;
+    
+  }
+
+  li{
+      margin: 10px;
+  }
+
+.innerList{
+    list-style-type: none;
+    margin-left: 1em;
+    
+}
+
+a {
+    display: block;
+    color: #477ca7;
+  }
+  
+  a:visited {
+    color: #74638f;
+  }
+
+/* Gradient transparent - color - transparent */
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: yellow;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+  /* Style the head01er */
+.header {
+    padding: 10px 16px;
+  }
+ 
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
